@@ -1,3 +1,29 @@
+### Table of Contents
+
+- [1. System Architecture](#1-system-architecture)
+- [2. Design Details](#2-design-details)
+- [3. Implementation Plan](#3-implementation-plan)
+- [4. Testing Plan](#4-testing-plan)
+- [Document Revision History](#document-revision-history)
+
+## 1. System Architecture
+### **MVC**
+<system_architecture.drawio>
+
+### **Model**
+#### **E-R Diagram**
+<model.drawio>
+
+#### **Model Methods**
+
+(method 설명)
+
+### **View**
+#### **UI Flow**
+
+[figma](https://www.figma.com/file/wxrYdzTTUHOKm9W5qSGWmC/design?node-id=63%3A3)
+
+#### **Page Functions**
 
 > **Globally Used Components**
 
@@ -108,3 +134,52 @@
 - Cover area
   - Show cover list of user
 - Bio area
+
+
+## 2. Design Details
+### **Frontend Design**
+#### **Components**
+<front_components.drawio>
+
+#### **Algorithms**
+1. Header
+- init: Check user is logged in by calling backend api. Then, show login and logout button if user in not signed in, else show logout button.
+- onSearchClicked: Redirect to SearchResult page with search keyword as parameter.
+
+2. Main
+- onAlbumTitleClicked: Redirect to SongPage of clicked song
+
+3. PlayBar
+- onTitleClicked: Redirect to SongPage of clicked song
+- onPlayClicked: Resume of pause playing combination.
+- onNextClicked: Play next combination in playlist.
+- onPrevClicked: Play previous combination in playlist.
+- onLikeClicked: Call backend api (POST: "/combination/like/<id:int>/")
+- onUnlikeClicked: Call backend api (DELETE: "/combination/like/<id:int>/")
+
+4. SignIn
+- onSignInClicked: Call backend api (POST: "/user/signin/") with input email and password. If login sucess, redirect to previous page.
+
+4. SignUp
+- onSignUpClicked: Call backend api (POST: "/user/signup/") with input email and password. If signin sucess, redirect to previous page.
+
+5. SearchResult
+- onResultLineClicked: Redirect to SongPage of clicked song
+- onResultAuthorClicked: Redirect to ProfilePage of clicked user
+
+
+### **Backend Design**
+#### **API**
+
+## 3. Implementation Plan
+
+
+## 4. Testing Plan
+### **Unit Tests**
+
+### **Functional Tests**
+
+### **Integration Tests**
+
+## Document Revision History
+- `Rev. 1.0 2021-XX-XX` - initial version
