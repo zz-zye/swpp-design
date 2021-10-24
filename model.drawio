@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="qhhgVpQUWNCosZ2mL5r4" name="페이지-1">
-        <mxGraphModel dx="535" dy="1328" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="415" dy="1328" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -76,7 +76,7 @@
                         <mxPoint x="1610" y="160" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="150" value="User&lt;br style=&quot;font-size: 13px&quot;&gt;can play Instruments" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="149" connectable="0" vertex="1">
+                <mxCell id="150" value="User&lt;br style=&quot;font-size: 13px&quot;&gt;can play Instruments" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="149" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-2" as="offset"/>
                     </mxGeometry>
@@ -202,7 +202,7 @@
                         <mxPoint x="1564.5" y="319.58000000000004" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="189" value="User&lt;br style=&quot;font-size: 13px;&quot;&gt;Makes Covers" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="188" connectable="0" vertex="1">
+                <mxCell id="189" value="User&lt;br style=&quot;font-size: 13px;&quot;&gt;Makes Covers" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="188" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-2" as="offset"/>
                     </mxGeometry>
@@ -223,7 +223,7 @@
                         <mxPoint x="1670" y="200" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="199" value="Cover&lt;br style=&quot;font-size: 13px&quot;&gt;done by Instrument" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="198" connectable="0" vertex="1">
+                <mxCell id="199" value="Cover&lt;br style=&quot;font-size: 13px&quot;&gt;done by Instrument" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="198" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-1" y="-1" as="offset"/>
                     </mxGeometry>
@@ -275,7 +275,7 @@
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="228" value="Combination&lt;br style=&quot;font-size: 13px&quot;&gt;contains Covers" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="227" connectable="0" vertex="1">
+                <mxCell id="228" value="Combination&lt;br style=&quot;font-size: 13px&quot;&gt;contains Covers" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="227" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-2" as="offset"/>
                     </mxGeometry>
@@ -296,7 +296,7 @@
                         <mxPoint x="1080" y="570" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="232" value="Cover&lt;br style=&quot;font-size: 13px&quot;&gt;can have&lt;br style=&quot;font-size: 13px&quot;&gt;CoverTags" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="231" connectable="0" vertex="1">
+                <mxCell id="232" value="Cover&lt;br style=&quot;font-size: 13px&quot;&gt;can have&lt;br style=&quot;font-size: 13px&quot;&gt;CoverTags" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="231" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-1" as="offset"/>
                     </mxGeometry>
@@ -416,7 +416,7 @@
                         <mxPoint x="1450" y="530" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="275" value="Song&lt;br style=&quot;font-size: 13px&quot;&gt;can have Covers" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="274" connectable="0" vertex="1">
+                <mxCell id="275" value="Song&lt;br style=&quot;font-size: 13px&quot;&gt;can have Covers" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="274" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-2" as="offset"/>
                     </mxGeometry>
@@ -450,7 +450,7 @@
                         <mxPoint x="1640" y="310" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="422" value="User&lt;br style=&quot;font-size: 13px&quot;&gt;can like Combinations" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="421" connectable="0" vertex="1">
+                <mxCell id="422" value="User&lt;br style=&quot;font-size: 13px&quot;&gt;can like Combinations" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="421" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="34" y="3" as="offset"/>
                     </mxGeometry>
@@ -465,7 +465,7 @@
                         <mxPoint x="-10" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="425" value="User&lt;br style=&quot;font-size: 13px&quot;&gt;can have Followings" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=none;" parent="1" connectable="0" vertex="1">
+                <mxCell id="425" value="User&lt;br style=&quot;font-size: 13px&quot;&gt;can have Followings" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;labelBorderColor=none;fontSize=13;labelBackgroundColor=#ffffff;" parent="1" connectable="0" vertex="1">
                     <mxGeometry x="1170.0028117751153" y="160.00198924099203" as="geometry"/>
                 </mxCell>
             </root>
