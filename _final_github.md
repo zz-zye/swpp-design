@@ -1,8 +1,17 @@
 ### Table of Contents
 
 - [1. System Architecture](#1-system-architecture)
+  * [1.1. MVC Pattern](#11-mvc-pattern)
+  * [1.2. Model](#12-model)
+  * [1.3. View](#13-view)
+  * [1.4. Controller](#14-controller)
 - [2. Design Details](#2-design-details)
+  * [2.1. Frontend Design](#21-frontend-design)
+  * [2.2. Algorithms](#22-algorithms)
+  * [2.3. Backend Design](#23-backend-design)
 - [3. Implementation Plan](#3-implementation-plan)
+  * [3.1. Backend Implementation Plan](#31-backend-implementation-plan)
+  * [3.2. Frontend Implementation Plan](#32-frontend-implementation-plan)
 - [4. Testing Plan](#4-testing-plan)
 - [Document Revision History](#document-revision-history)
 
@@ -11,7 +20,7 @@
 ---
 
 ## 1. System Architecture
-### **MVC Pattern**
+### 1.1. MVC Pattern
 
 Below is the Model-View-Controller pattern of Bandcruit's system architecture.   
 The backend consists of 8 models, and the frontend is largely divided into 7 pages.
@@ -24,7 +33,9 @@ The backend consists of 8 models, and the frontend is largely divided into 7 pag
 
 ---
 
-### **Model (E-R Diagram)**
+### 1.2. Model
+
+#### E-R Diagram
 
 **Rectangles** depict Django model entities. Attributes of the model are shown as a list inside the table with field name and type.    
 **PK** indicates primary key, listed at the top, and **FK** indicates foreign key.   
@@ -55,11 +66,13 @@ Below is the description for each model.
 
 ---
 
-### **View (UI Flow)**
+### 1.3. View
+
+#### UI Flow
 
 <br/>
 
-> #### [Figma Link](https://www.figma.com/file/gNln0yZ7mLkvUX1IxviQQg/UI-Flow?node-id=0%3A1)
+> [**Figma Link**](https://www.figma.com/file/gNln0yZ7mLkvUX1IxviQQg/UI-Flow?node-id=0%3A1)   
 > To see the full UI flow in high definition, please visit the Figma link above.
 
 
@@ -89,7 +102,7 @@ The details of each page and component are explained below.
 
 ---
 
-#### **Globally used components/containers**
+#### Globally used components/containers
 
 **Header**
 - Present on every page
@@ -111,7 +124,7 @@ The details of each page and component are explained below.
 
 ---
 
-#### **Pages**
+#### Pages
 
 **1. MainPage**
 - Show recommended song(`Album`) list
@@ -206,7 +219,7 @@ The details of each page and component are explained below.
 
 ---
 
-### **Controller**
+### 1.4. Controller
 
 <br/>
 
@@ -221,27 +234,27 @@ The controller will receive HTTP requests from the view(frontend) by the user, a
 ---
 
 ## 2. Design Details
-### **Frontend Design**
+### 2.1. Frontend Design
 
-#### **Components**
+#### Components
 ![front_components](https://user-images.githubusercontent.com/77932817/139018239-4caed7a9-ed7f-4e28-8e86-91d6d45b948f.png)
 
 <br/>
 
-#### **Containers**
+#### Containers
 ![front_container](https://user-images.githubusercontent.com/77932817/139022631-5958751b-5f8d-4a35-9df7-9439a946df03.png)
 
 <br/>
 
-#### **Services**
+#### Services
 ![front_services](https://user-images.githubusercontent.com/77932817/139018444-237c9f89-7982-4974-81f1-f72b4ec823b1.png)
 
 <br/>
 
 ---
 
-### **Algorithms**
-#### **Components**
+### 2.2. Algorithms
+#### Components
 
 **1. PlayerBar**
 - `onTitleClicked`: Redirect to SongPage of clicked song
@@ -261,7 +274,7 @@ The controller will receive HTTP requests from the view(frontend) by the user, a
 
 ---
 
-#### **Containers**
+#### Containers
 
 **0. Header**
 - `init`: Check user is logged in by calling backend API. Then, show login and logout button if user in not signed in, else show logout button.
@@ -330,7 +343,7 @@ The controller will receive HTTP requests from the view(frontend) by the user, a
 
 ---
 
-#### **Services**
+#### Services
 
 **1. UserService**
 - `sign_up(email:string, password:string)` : Call Backend signup API, and return the result.
@@ -372,8 +385,8 @@ The controller will receive HTTP requests from the view(frontend) by the user, a
 
 ---
 
-### **Backend Design**
-#### **API**
+### 2.3. Backend Design
+#### API
 
 |Model|API|GET|POST|PUT|DELETE|
 |---|---|---|---|---|---|
@@ -400,13 +413,13 @@ The controller will receive HTTP requests from the view(frontend) by the user, a
 
 ## 3. Implementation Plan
 
-### **Backend Implementation Plan**
+### 3.1. Backend Implementation Plan
 
 The **Difficulty** is categorized into 1 ~ 5 stars.   
 The **Time** needed for implementation is shown in days.   
 There are no hard dependencies among backend APIs, but every API should be made after the initializing step `B0.1`.
 
-|#|Model|API|Difficulty|Time(days)|Sprint|Assignee|
+|#|Model|API|Difficulty|Time|Sprint|Assignee|
 |:-:|:-|:-|:-:|:-:|:-:|:-:|
 |`B0.1`|**Initializing**|make model|★★☆☆☆|2|2|종선|
 |`B1.1`|**User**|`/user/signup/`|★★☆☆☆|2|3|형욱|
@@ -430,12 +443,12 @@ There are no hard dependencies among backend APIs, but every API should be made 
 
 ---
 
-### **Frontend Implementation Plan**
+### 3.2. Frontend Implementation Plan
 
 The **Difficulty** and **Time** columns are the same as backend.   
 The **Dependency** column shows which features it depends on. Only hard dependencies that are completely necessary are shown. Otherwise, it is possible to implement the feature with dummy models.
 
-|#|Page/Component|Feature|Dependency|Difficulty|Time(days)|Sprint|Assignee|
+|#|Page/Component|Feature|Dependency|Difficulty|Time|Sprint|Assignee|
 |:-:|:-|:-|:-|:-:|:-:|:-:|:-:|
 |`F1.1`|**Header**|Design, sign in / sign up buttons||★☆☆☆☆|1|3|종선|
 |`F1.3`||Sign out function|`B1.3`|★☆☆☆☆|2|3|종선|
@@ -483,13 +496,13 @@ The **Dependency** column shows which features it depends on. Only hard dependen
 ---
 
 ## 4. Testing Plan
-### **Unit Tests**
+### Unit Tests
 The subject of unit testing would be every component and module. In each sprint, we would test implemented modules with React: Jest, Enzyme / Django : Python unit test. We expect code coverage to be over 90%.
 
-### **Functional Tests**
+### Functional Tests
 The subject of functional testing would be every API. We will use React: Jest, Enzyme / Django : Python unit test. In sprint 3,4 we would test RESTful API. 
 
-### **Acceptance & Integration Tests**
+### Acceptance & Integration Tests
 We would use Cucumber for acceptance testing and Travis CI for integration testing. We will run acceptance test and integration test in sprint 4. 
 
 
