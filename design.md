@@ -1187,4 +1187,4 @@ We would use Cucumber for acceptance testing and Travis CI for integration testi
 - `Rev. 1.0 2021-10-28` - initial version
 - `Rev. 1.1 2021-11-13` - modified in Sprint 3
 - `Rev. 1.2 2021-11-27` - modified in Sprint 4
-- `Rev. 1.21 2021-11-10` - modified in issue #76
+- `Rev. 1.3 2021-12-11` - modified in Sprint 5

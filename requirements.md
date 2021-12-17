@@ -9,7 +9,7 @@
 
 ## 1. Project Abstract
 
-> Bandcruit is a platform where band enthusiasts can easily create **_band cover contents_** regardless of time and space. A **_cover_** is defined as a performance of an existing song by other vocalists/instrumentalists. In Bandcruit, you can **_record & upload_** song covers with your vocals or instruments, and **_listen_** to other people's covers.<br/> Bandcruit specializes in connectivity between covers. Among the covers of a particular song,<br/> **1)** Anyone can listen to combinations of any covers simultaneously, and<br/> **2)** Anyone can record their own cover while listening to that combination and upload it.<br/> For example, a `guitarist G` may add guitar lines while listening to `vocalist V`'s vocals and `drummer D`'s drums. Another `vocalist V2` may hear `G`'s guitars and record their own vocals to it. These kinds of interactions make it possible to have limitless amount of **_cover combinations_**, and infinite possibilities for musical collaboration. Bandcruit aims to be a place for people of any musical background, where band enthusiasts can easily participate in musical activities and experience connections with other people without any constraints of real-time or off-line meetings.
+> in MetaBand, people can create **_band cover contents_** regardless of time and space. A **_cover_** is a performance of an existing song by other vocalists/instrumentalists. In MetaBand, you can **_record & upload_** song covers and **_listen_** to other people's covers.<br/> MetaBand specializes in connectivity between covers. Among the covers of a particular song,<br/> **1)** Anyone can listen to combinations of any covers simultaneously, and<br/> **2)** Anyone can record/upload their own cover while listening to that combination.<br/> For example, `guitarist G` may add guitar lines while listening to `vocalist V`'s vocals and `drummer D`'s drums. Another `vocalist V2` may hear `G`'s guitars and record their own vocals to it. These kinds of interactions make it possible to have limitless amount of **_cover combinations_**. A combination of covers is called a **_MetaBand_** (metaverse + band), since it is essentially a band formed virtually.<br/> MetaBand aims to be a place for people of any musical background, where one can musically connect with others without any constraints of offline meetings.
 
 ## 2. Customer
 
@@ -69,11 +69,9 @@
 
 ## 4. User Stories
 
-Stories for future sprints are listed below.
-
 ### **Player bar**
 
-**Player bar plays song (Sprint 3)**
+**Player bar plays song**
 
 - Actors : `User`
 - Preconditions :
@@ -90,11 +88,9 @@ Stories for future sprints are listed below.
   - Play control buttons should work.
   - The like button should work.
 
-**_In Sprint 3, a dummy recommendation list will be used. There will be no recommendation algorithm._**
-
 ### **Main Page**
 
-**Search Music (Sprint 3)**
+**Search Music (Sprint 5)**
 
 - Actors : `User` or `Guest`
 - Preconditions :
@@ -110,7 +106,7 @@ Stories for future sprints are listed below.
   - The list should show all songs that match keywords.
   - The songs should be ordered by matching order.
 
-**Listen to Music (Sprint 3)**
+**Listen to Music**
 
 - Actors : `User` or `Guest`
 - Preconditions :
@@ -126,7 +122,7 @@ Stories for future sprints are listed below.
 
 ### **Create Song Page**
 
-**Create Song Page (Sprint 3)**
+**Create Song Page**
 
 - Actors : `User`
 - Preconditions :
@@ -148,7 +144,7 @@ Stories for future sprints are listed below.
 
 ### **Song Page**
 
-**Listen to Combination (Sprint 3)**
+**Listen to Combination**
 
 - Actors : `User` or `Guest`
 - Preconditions :
@@ -165,7 +161,7 @@ Stories for future sprints are listed below.
   - Correct **Song page** should be loaded.
   - When clicking `Listen`, the combination should play properly.
 
-**Make Custom Combination (Sprint 3)**
+**Make Custom Combination**
 
 - Actors : `User` or `Guest`
 - Preconditions :
@@ -181,7 +177,7 @@ Stories for future sprints are listed below.
   - Selected covers should be included in the custom combination
   - If the completed combination does not exist, it should be newly added to the combination list
 
-**Functions in Cover List (Sprint 3,4)**
+**Functions in Cover List (Sprint 4, 5)**
 
 - Actors : `User` or `Guest`
 - Preconditions :
@@ -204,7 +200,7 @@ Stories for future sprints are listed below.
 
 ### **Create Cover Page**
 
-**Create new cover in Create Cover Page (Sprint 3, 4)**
+**Create new cover in Create Cover Page**
 
 - Actors : `User`
 - Preconditions :
@@ -230,7 +226,7 @@ Stories for future sprints are listed below.
 
 ### **Cover Page**
 
-**Listen to the Cover in Cover Page (Sprint 3)**
+**Listen to the Cover in Cover Page**
 
 - Actors : `User` or `Guest`
 - Preconditions :
@@ -243,7 +239,7 @@ Stories for future sprints are listed below.
 - Acceptance test :
   - if `Play` button is clicked, the cover should be played.
 
-**Show Cover Information (Sprint 3)**
+**Show Cover Information**
 
 - Actors : `User` or `Guest`
 - Preconditions :
@@ -257,7 +253,7 @@ Stories for future sprints are listed below.
 - Acceptance test :
   - The cover information should be displayed clearly.
 
-**Edit Cover Information (Sprint 4)**
+**Edit Cover Information**
 
 - Actors : User who is `Author` of this Cover page, `Admin`
 - Preconditions :
@@ -271,7 +267,7 @@ Stories for future sprints are listed below.
 - Acceptance test :
   - After Clicking the `Save` button, the information should be changed correctly.
 
-**Remove Cover Songs (Sprint 4)**
+**Remove Cover Songs**
 
 - Actors : User who is `Author` of this Cover page, `Admin`
 - Precondition :
@@ -284,7 +280,7 @@ Stories for future sprints are listed below.
 - Acceptance test :
   - The cover page should be removed along with its comment, tag, likes, etc.
 
-### **Profile Page (Sprint 3,4)**
+### **Profile Page (Sprint 4, 5)**
 
 - Cover list
   - list all covers that the `User` made
@@ -296,7 +292,7 @@ Stories for future sprints are listed below.
 
 ### **User Registration**
 
-**Sign Up (Sprint 4)**
+**Sign Up (Sprint 4, 5)**
 
 - Actors : `Guest`
 - Preconditions :
@@ -315,7 +311,7 @@ Stories for future sprints are listed below.
 - Acceptance Test :
   - Email and password should be saved for the new user
 
-**Sign In (Sprint 4)**
+**Sign In (Sprint 4, 5)**
 
 - Actors : `Guest`
 - Preconditions :
@@ -365,3 +361,5 @@ Stories for future sprints are listed below.
 
 - `Rev. 1.0 2021-10-16` - initial version
 - `Rev. 1.1 2021-10-30` - modified in Sprint 2
+- `Rev. 1.2 2021-11-13` - modified in Sprint 3
+- `Rev. 1.3 2021-11-27` - modified in Sprint 4
